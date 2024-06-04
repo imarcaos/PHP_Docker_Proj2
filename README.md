@@ -3,10 +3,10 @@ Estudo de Docker e PHP
 
 # Projeto 2 - PHP e Docker
 
-Projeto criado com o intuíto para estudar a estruturação, organização e conexão entre PHP e MySQL, utilizando o Docker.
-- O projeto foi criado para eu poder ter uma documentação de como irei utilizar o docker-compose para subir o php-apache e o mysql
+Projeto criado com o intuíto de estudar a estruturação, organização e conexão entre PHP e MySQL utilizando o Docker.
+- Irei utilizar o docker-compose para subir o php-apache e o mysql
 - Aproveito também neste projeto para estudar variáveis de ambiente utilizando o ficheiro .env
-- Este projeto não será só meu, se for útil para si, aproveite. Irei tentar deixar o mais explicado possível os meus passos por aqui.
+- Espero que este projeto seja útil para si, aproveite. Irei tentar detalhar os passos da melhor forma possível.
 
 ##### Iniciado: 2024/06/03
 
@@ -25,4 +25,18 @@ Projeto criado com o intuíto para estudar a estruturação, organização e con
 #### Sistema de Pastas e Ficheiros:
 - |_ php_docker_Proj2
     - |_ .env
-    - |_ docker-composer.yml
+    - |_ docker-compose.yml
+
+
+#### Pontos Principais de Trabalho:
+- Criação dos ficheiro docker-compose.yml e .env
+- Iniciar os contentores com o Docker Compose na primeira vez
+    - Esta opção tem que ser feita dentro a pasta do projeto onde temos o ficheiro "docker-compose.yml"
+    - "up" para subir a primeira vez e "-d" para rodar em background
+        - docker-compose up -d    
+    - Para parar o Docker Compose (Containers)
+        - docker-compose stop
+    - Para iniciar o Docker Compose (Containers)
+        - docker-compose start
+    - Para apagar os containers
+        - docker-compose down

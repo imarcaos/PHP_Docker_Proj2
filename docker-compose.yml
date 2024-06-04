@@ -1,4 +1,5 @@
 version: '3.9'
+
 services:
   web:
     image: php:8.2-apache
@@ -14,10 +15,11 @@ services:
     container_name: m-mysql
     ports:
       - "3306:3306"
-      volumes:
+    volumes:
       - /var/lib/mysql
     environment: # Estudar variáveis de ambiente '.env'
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      #MYSQL_USER: ${MYSQL_USER}
+      #MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     
 
