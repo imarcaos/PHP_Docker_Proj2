@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  web:
+    image: php:8.2-apache
+    container_name: m-web
+    ports:
+      - "80:80"
+    volumes:
+      - /home/marcaos/Coding/www/php_docker_Proj2:/var/www/html
+    links:
+      - db    
+  db:
+    image: mysql:latest
+    container_name: m-mysql
+    ports:
+      - "3306:3306"
+      volumes:
+      - /var/lib/mysql
+    environment: # Estudar variáveis de ambiente '.env'
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    
+
