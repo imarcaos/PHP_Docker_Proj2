@@ -41,3 +41,11 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - Para apagar os containers
         - docker-compose down
 - Criar ficheiro teste.php para testar se carregou o php com o phpinfo
+- Teste de conexão com a nossa BD
+    - Ao testar a conexão deu um erro, porque falta instalar a extensão PHP mysqli para fazer a conexão com a BD
+    - Vou aproveitar com o comando abaixo, instalar o mysqli e pdo (extensão para conexão com a BD).
+        - $ docker-compose exec web docker-php-ext-install pdo pdo_mysql mysqli
+    - O "web" é o nome do nosso container que possui o PHP.
+    - Reiniciar (stop e start) os Containers e testar a página que retornou "OK". 
+    - Destes estudos que estou a fazer com o Docker, a próxima etapa e carregar um ficheiro "Docker File"
+    para adicionar os comandos de instalação das extensões que precisamos, para evitar de fazer manualmente.
