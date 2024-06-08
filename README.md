@@ -40,3 +40,4 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - docker-compose start
     - Para apagar os containers
         - docker-compose down
+- Criar ficheiro teste.php para testar se carregou o php com o phpinfo
