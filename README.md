@@ -49,3 +49,9 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - Reiniciar (stop e start) os Containers e testar a página que retornou "OK". 
     - Destes estudos que estou a fazer com o Docker, a próxima etapa e carregar um ficheiro "Docker File"
     para adicionar os comandos de instalação das extensões que precisamos, para evitar de fazer manualmente.
+- Teste para o Volume do MySQL
+    - Mandei os Containers abaixo para ver se os dados do MySQL estavam a persistir, não estavam.
+    - Depois de alguns destes, do exemplo que segui do ficheiro `.yalm` estava errado na parte do MySQL,
+    faltava acrescentar o caminho para a minha pasta de dados, ficando como o exemplo abaixo:
+        - volumes:
+            - /home/user/Coding/mysql:/var/lib/mysql

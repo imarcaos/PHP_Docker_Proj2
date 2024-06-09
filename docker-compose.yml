@@ -1,4 +1,4 @@
-version: '3.9'
+##version: '3.9'
 
 services:
   web:
@@ -16,7 +16,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - /var/lib/mysql
+      - /home/marcaos/Coding/.lib/mysql:/var/lib/mysql
     environment: # Estudar variáveis de ambiente '.env'
       #MYSQL_USER: ${MYSQL_USER}
       #MYSQL_PASSWORD: ${MYSQL_PASSWORD}
