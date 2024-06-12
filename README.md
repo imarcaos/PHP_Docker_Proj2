@@ -59,3 +59,4 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - Será preciso remover nossos Containers e subi-lo novamente
         - docker-compose down
         - docker-compose up -d
+    - Foi adicionado ao docker-file uma linha de código para remover o erro do servidor apache
