@@ -6,7 +6,7 @@ Estudo de Docker e PHP
 Projeto criado com o intuíto de estudar a estruturação, organização e conexão entre PHP e MySQL utilizando o Docker.
 - Irei utilizar o docker-compose para subir o php-apache e o mysql
 - Aproveito também neste projeto para estudar variáveis de ambiente utilizando o ficheiro .env
-- Espero que este projeto seja útil para si, aproveite. Irei tentar detalhar os passos da melhor forma possível.
+- Vou detalhar os passos da melhor forma possível para uma futura busca de informação.
 
 ##### Iniciado: 2024/06/03
 
@@ -18,7 +18,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 - Visual Studio Code (codar)
 - DBeaver - Vou utilizar este Sistema de Gestão de BD.
 - Docker (Rodar contentores em cima)
-- Apacher (poderá substituir por outro, ex. NGINX)
+- Apache (poderá ser substituido por outro, ex. NGINX)
 - PHP
 - MySQL
 
@@ -55,3 +55,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     faltava acrescentar o caminho para a minha pasta de dados, ficando como o exemplo abaixo:
         - volumes:
             - /home/user/Coding/mysql:/var/lib/mysql
+- Subir Container PHP extensões com Dockerfile
+    - Será preciso remover nossos Containers e subi-lo novamente
+        - docker-compose down
+        - docker-compose up -d

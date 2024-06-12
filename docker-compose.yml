@@ -2,7 +2,7 @@
 
 services:
   web:
-    image: php:8.2-apache
+    build: .
     container_name: m-web
     ports:
       - "80:80"
