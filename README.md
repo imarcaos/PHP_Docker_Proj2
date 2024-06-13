@@ -24,19 +24,25 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 
 ### Sistema de Pastas e Ficheiros:
 - |_ php_docker_Proj2
-    - |_ .env
-    - |_ docker-compose.yml
+    - |_ v1
+        - |_ .env
+        - |_ docker-compose.yml
+        - |_ Dockerfile
+        - |_ index.html
+        - |_ teste.php
+    - |_ v2
+        - |_ ?
 
 
 ### Pontos Principais de Trabalho:
 
 #### Primeira Fase de Estudos com o Docker
-- **Resumo da primeira fase:**
+- **Resumo da primeira fase, v1:**
     - Estudei como subir os contentores com as imagens php-apache e mysql através do docker-compose e instalando manualmente diretamente do Docker as extensões do php para conexão com a BD.
     - Removi as imagens anteriores. Através do docker-compose chamei um ficheiro Dockerfile que carregou as imagens do apache-php e instalou a extensões que necessiva para conectar a BD, tudo ao fazer o up das imagens.
     - Resolvi o problema ao qual não estava a conseguir fazer persistir as informações da BD.
 
-
+- **v1 Passos e processos que fiz:**
 - Criação dos ficheiro docker-compose.yml e .env
 - Iniciar os contentores com o Docker Compose na primeira vez
     - Esta opção tem que ser feita dentro a pasta do projeto onde temos o ficheiro "docker-compose.yml"
@@ -68,4 +74,16 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - docker-compose down
         - docker-compose up -d
     - Foi adicionado ao docker-file uma linha de código para remover o erro do servidor apache
-- Neste ponto tenho
+- Aqui Finalizo a primeira deste estudo, que irei guardar todo o conteúdo na pasta v1(versão1)
+    - Conteúdo da pasta v1:
+        - docker-compose
+        - Dockerfile
+        - index.html (1º teste do servidor)
+        - teste.php (1º teste com phpinfo e 2º teste para conexão com a BD)
+
+#### Segunda Fase de Estudos com o Docker
+- **Resumo da segunda fase, v2:**
+    - a preencher
+
+- **v2 Passos e processos que fiz:**
+- brevemente
