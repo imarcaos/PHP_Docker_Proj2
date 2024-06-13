@@ -14,7 +14,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 ![Projeto 2 PHP Finalizado](brevemente)
 
 
-#### Pré-requisitos para este projeto
+### Pré-requisitos para este projeto
 - Visual Studio Code (codar)
 - DBeaver - Vou utilizar este Sistema de Gestão de BD.
 - Docker (Rodar contentores em cima)
@@ -22,13 +22,21 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 - PHP
 - MySQL
 
-#### Sistema de Pastas e Ficheiros:
+### Sistema de Pastas e Ficheiros:
 - |_ php_docker_Proj2
     - |_ .env
     - |_ docker-compose.yml
 
 
-#### Pontos Principais de Trabalho:
+### Pontos Principais de Trabalho:
+
+#### Primeira Fase de Estudos com o Docker
+- **Resumo da primeira fase:**
+    - Estudei como subir os contentores com as imagens php-apache e mysql através do docker-compose e instalando manualmente diretamente do Docker as extensões do php para conexão com a BD.
+    - Removi as imagens anteriores. Através do docker-compose chamei um ficheiro Dockerfile que carregou as imagens do apache-php e instalou a extensões que necessiva para conectar a BD, tudo ao fazer o up das imagens.
+    - Resolvi o problema ao qual não estava a conseguir fazer persistir as informações da BD.
+
+
 - Criação dos ficheiro docker-compose.yml e .env
 - Iniciar os contentores com o Docker Compose na primeira vez
     - Esta opção tem que ser feita dentro a pasta do projeto onde temos o ficheiro "docker-compose.yml"
@@ -55,8 +63,9 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     faltava acrescentar o caminho para a minha pasta de dados, ficando como o exemplo abaixo:
         - volumes:
             - /home/user/Coding/mysql:/var/lib/mysql
-- Subir Container PHP extensões com Dockerfile
+- Subir Container PHP e adicionar extensões através do Dockerfile
     - Será preciso remover nossos Containers e subi-lo novamente
         - docker-compose down
         - docker-compose up -d
     - Foi adicionado ao docker-file uma linha de código para remover o erro do servidor apache
+- Neste ponto tenho
