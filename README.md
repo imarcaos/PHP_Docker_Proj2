@@ -4,6 +4,7 @@ Estudo de Docker e PHP
 # Projeto 2 - PHP e Docker
 
 Projeto criado com o intuíto de estudar a estruturação, organização e conexão entre PHP e MySQL utilizando o Docker.
+- Estou a utilizar o Docker no Windows com o WSL Ubuntu e o Docker Desktop.
 - Irei utilizar o docker-compose para subir o php-apache e o mysql
 - Aproveito também neste projeto para estudar variáveis de ambiente utilizando o ficheiro .env
 - Vou detalhar os passos da melhor forma possível para uma futura busca de informação.
@@ -18,7 +19,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 - Visual Studio Code (codar)
 - DBeaver - Vou utilizar este Sistema de Gestão de BD.
 - Docker (Rodar contentores em cima)
-- Apache (poderá ser substituido por outro, ex. NGINX)
+- Apache ou NGINX
 - PHP
 - MySQL
 
@@ -33,6 +34,11 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - |_ v2
         - |_ ?
 
+### Falha no Docker Desktop
+- Quando estava a escrever as alterações para iniciar a criação da versão 2 do meu projeto, meu Docker Desktop no Windows resolveu "Crashar", reiniciei, tentei outras coisas que vi na net e não consegui carregar mais nada, desinstalei e decidi aventurar-me com o Docker Engine
+- Como já conheço e uso o SO Linux há muitos anos, decidi aventurar-me mais a fundo no WSL. Tenho utilizado o Windows para fazer meus trabalhos por causa de um curso online pelo IEFP que estou a frequentar e é necessário utilizar o Teams e muitas outras ferramentas da Microsoft (Access, MS SQL Server, Visio, Visual Studio para Visual Basic, ASP.NET, C#, etc).
+- Já que é para ter trabalho, vamos ter um trabalho descente com o WSL e utilizar o Docker como deve ser neste SO.
+- Segui a configuração do **Docker Engine** pelo site oficial do Docker [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) e também alguns vídeos no youtube para ver se o processo que estava a fazer, estavam corretos.
 
 ### Pontos Principais de Trabalho:
 
@@ -81,9 +87,11 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - index.html (1º teste do servidor)
         - teste.php (1º teste com phpinfo e 2º teste para conexão com a BD)
 
+
+
 #### Segunda Fase de Estudos com o Docker
 - **Resumo da segunda fase, v2:**
     - a preencher
 
 - **v2 Passos e processos que fiz:**
-- brevemente
+- 
