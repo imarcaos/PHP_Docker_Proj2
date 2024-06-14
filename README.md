@@ -83,11 +83,11 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - volumes:
             - /home/user/Coding/mysql:/var/lib/mysql
 - Subir Container PHP e adicionar extensões através do Dockerfile
-    - Será preciso remover nossos Containers e subi-lo novamente
+    - Será preciso remover nossos Containers e subi-los novamente
         - docker-compose down
         - docker-compose up -d
     - Foi adicionado ao docker-file uma linha de código para remover o erro do servidor apache
-- Aqui Finalizo a primeira deste estudo, que irei guardar todo o conteúdo na pasta v1(versão1)
+- Aqui Finalizo a primeira parte deste estudo, que irei guardar todo o conteúdo na pasta v1(versão1)
     - Conteúdo da pasta v1:
         - docker-compose
         - Dockerfile
@@ -106,3 +106,5 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - docker > app > public > index.php
     - docker > nginx > default.conf
     - docker > php > Dockerfile
+    - docker-composer.yalm
+- Adicionado o MySQL e variáveis de ambiente .env

@@ -17,3 +17,14 @@ services:
       - ./docker/app/public:/var/www/html
 
   # mysql
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/marcaos/Coding/.lib/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}      
