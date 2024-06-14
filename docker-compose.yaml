@@ -5,7 +5,15 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/app/public:/var/www/html
 
   # php
+  php:
+    build:
+      dockerfile: ./docker/php/Dockerfile
+    volumes:
+      - ./docker/app/public:/var/www/html
 
   # mysql

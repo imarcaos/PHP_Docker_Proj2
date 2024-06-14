@@ -32,7 +32,14 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - |_ index.html
         - |_ teste.php
     - |_ v2
-        - |_ ?
+        - |_ app
+            - |_ public
+              - |_ index.php
+        - |_ nginx
+            - |_ default.conf
+        - |_ php
+            - |_ Dockerfile
+        - docker-compose.yaml
 
 ### Falha no Docker Desktop
 - Quando estava a escrever as alterações para iniciar a criação da versão 2 do meu projeto, meu Docker Desktop no Windows resolveu "Crashar", reiniciei, tentei outras coisas que vi na net e não consegui carregar mais nada, desinstalei e decidi aventurar-me com o Docker Engine
@@ -95,3 +102,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
 
 - **v2 Passos e processos que fiz:**
 - Iniciando um novo ficheiro docker-compose com NGINX
+- Criando o Dockerfile PHP e as pastas necessárias para organizar os ficheiros, pastas:
+    - docker > app > public > index.php
+    - docker > nginx > default.conf
+    - docker > php > Dockerfile
