@@ -94,4 +94,4 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - a preencher
 
 - **v2 Passos e processos que fiz:**
-- 
+- Iniciando um novo ficheiro docker-compose com NGINX
