@@ -40,6 +40,7 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
         - |_ php
             - |_ Dockerfile
         - docker-compose.yaml
+        - .env
 
 ### Falha no Docker Desktop
 - Quando estava a escrever as alterações para iniciar a criação da versão 2 do meu projeto, meu Docker Desktop no Windows resolveu "Crashar", reiniciei, tentei outras coisas que vi na net e não consegui carregar mais nada, desinstalei e decidi aventurar-me com o Docker Engine
