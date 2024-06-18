@@ -3,15 +3,19 @@
     padding: 0;
 }
 
-body {
+body {    
     background-color: azure;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-corpo {
-    /*background-color: red ;*/
+.form-login {
     width: 420px;
     margin: 150px auto 0 auto;
+}
+
+.form-registar {
+    width: 420px;
+    margin: 90px auto 0 auto;
 }
 
 input {
@@ -23,6 +27,20 @@ input {
     border: 1px solid black;
     border-radius: 15px;
     font-size: 16pt;
+    outline: none;
+}
+
+.btnAcessar {
+    background-color: #60d46a;
+    border: none;
+    width: 430px;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+}
+.btnAcessar:hover {
+    background-color: #60d46ad3;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .form-corpo h1 {

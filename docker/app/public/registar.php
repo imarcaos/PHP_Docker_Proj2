@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <div class="form-login">
+    <div class="form-registar">
         <div class="form-corpo">
-            <h1>Entrar</h1>
+            <h1>Registar</h1>
             <form action="processa.php" method="POST">
+                <input type="text" placeholder="Nome Completo">
+                <input type="text" placeholder="Telefone">
                 <input type="email" placeholder="Utilizador">
                 <input type="password" placeholder="Senha">
-                <input type="submit" value="ACESSAR" class="btnAcessar">
-                <a href="registar.php">Conheça meu trabalho!<strong> Registe-se</strong></a>
+                <input type="password" placeholder="Confirmar Senha">
+                <input type="submit" value="REGISTAR" class="btnAcessar">
             </form>
         </div>
     </div>
