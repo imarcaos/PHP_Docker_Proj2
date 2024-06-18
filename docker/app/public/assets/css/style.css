@@ -1,3 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-corpo {
+    /*background-color: red ;*/
+    width: 420px;
+    margin: 150px auto 0 auto;
+}
+
 input {
     display: block;
+    height: 55px;
+    width: 410px;
+    margin: 10px;
+    padding: 0 10px;    
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 16pt;
 }
+
+.form-corpo h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.form-corpo a {
+    display: block;
+    text-align: right;
+}
+.form-corpo a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
+.form-corpo a:hover {
+    text-decoration: underline;
+}
+
