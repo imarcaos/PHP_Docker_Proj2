@@ -12,16 +12,21 @@
     <div class="form-registar">
         <div class="form-corpo">
             <h1>Registar</h1>
-            <form action="processa.php" method="POST">
-                <input type="text" placeholder="Nome Completo">
-                <input type="text" placeholder="Telefone">
-                <input type="email" placeholder="Utilizador">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Confirmar Senha">
+            <form method="POST">
+                <input type="text" name="nome" placeholder="Nome Completo" maxlength="30">
+                <input type="text" name="telefone" placeholder="Telefone" maxlength="30">
+                <input type="email" name="email" placeholder="Utilizador" maxlength="40">
+                <input type="password" name="senha" placeholder="Senha"  maxlength="15">
+                <input type="password" name="confSenha" placeholder="Confirmar Senha"  maxlength="15">
                 <input type="submit" value="REGISTAR" class="btnAcessar">
             </form>
         </div>
     </div>
+
+    <?php
+
+    ?>
+
 </body>
 
 </html>

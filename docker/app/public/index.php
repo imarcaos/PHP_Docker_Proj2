@@ -12,14 +12,19 @@
     <div class="form-login">
         <div class="form-corpo">
             <h1>Entrar</h1>
-            <form action="processa.php" method="POST">
-                <input type="email" placeholder="Utilizador">
-                <input type="password" placeholder="Senha">
+            <form method="POST">
+                <input type="email" name="email" placeholder="Utilizador">
+                <input type="password" name="senha" placeholder="Senha">
                 <input type="submit" value="ACESSAR" class="btnAcessar">
                 <a href="registar.php">Conheça meu trabalho!<strong> Registe-se</strong></a>
             </form>
         </div>
     </div>
+    
+    <?php
+    
+    ?>
+
 </body>
 
 </html>

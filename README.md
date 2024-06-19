@@ -34,7 +34,11 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - |_ v2
         - |_ app
             - |_ public
+              - |_ assets
+                - |_ css
+                    - |_ style.css 
               - |_ index.php
+              - |_ registar.php
         - |_ nginx
             - |_ default.conf
         - |_ php
@@ -109,3 +113,22 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     - docker > php > Dockerfile
     - docker-composer.yalm
 - Adicionado o MySQL e variáveis de ambiente .env
+- Criação de um Sistema de Login Simples
+- Adicionado a página registar.php e a folha de estilo CSS
+- Foi criado dois formulários, um para o login e outro para registar
+- Estilização dos Formulários com CSS
+- Criação da BD para este Sistema de Login
+    ```
+        CREATE DATABASE projeto_login;
+        USE projeto_login;
+        
+        CREATE TABLE utilizadores(
+            id_utilizador INT AUTO_INCREMENT PRIMARY KEY,
+            nome VARCHAR (30),
+            telefone VARCHAR (30),
+            email VARCHAR (40),
+            senha VARCHAR (32)
+        );
+    ```
+- Com o tamanho de cada campo, limitamos no nosso formulário a quantidade de carateres a poder ser introduzido pelo utilizador com o `maxlength`
+- 
