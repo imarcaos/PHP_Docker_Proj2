@@ -43,15 +43,13 @@
             $sql->execute();
             if ($sql->rowCount() > 0) {
                 // entrar no sistema (sessão)
-                $dado = $sql->fetch();
-                session_start();
+                $dado = $sql->fetch();                
                 $_SESSION['id_utilizador'] = $dado['id_utilizador'];
+                session_start();
                 return true; // login efetuado com sucesso
             } else {
                 return false; // não conseguiu fazer o login
             }
-            
-
         }
     }
 

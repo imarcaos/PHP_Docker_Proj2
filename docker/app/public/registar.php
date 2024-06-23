@@ -1,6 +1,6 @@
 <?php
-    require_once 'classes/utilizador.php';
-    $u = new Utilizador;
+require_once 'classes/utilizador.php';
+$u = new Utilizador;
 ?>
 
 
@@ -22,8 +22,8 @@
                 <input type="text" name="nome" placeholder="Nome Completo" maxlength="30">
                 <input type="text" name="telefone" placeholder="Telefone" maxlength="30">
                 <input type="email" name="email" placeholder="Utilizador" maxlength="40">
-                <input type="password" name="senha" placeholder="Senha"  maxlength="15">
-                <input type="password" name="confSenha" placeholder="Confirmar Senha"  maxlength="15">
+                <input type="password" name="senha" placeholder="Senha" maxlength="15">
+                <input type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="15">
                 <input type="submit" value="REGISTAR" class="btnAcessar">
             </form>
         </div>
@@ -31,30 +31,51 @@
 
     <?php
     // verificar se clicou no botão
-    if (isset($_POST['nome'])){
+    if (isset($_POST['nome'])) {
         $nome = addslashes($_POST['nome']);
         $telefone = addslashes($_POST['telefone']);
         $email = addslashes($_POST['email']);
         $senha = addslashes($_POST['senha']);
         $confirmarsenha = addslashes($_POST['confSenha']);
         // verificar se está preenchido
-        if(!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarsenha)) {
+        if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarsenha)) {
             $u->conectar("projeto_login", "db", "root", "root");
-            if($u->msgErro == "") {
-                if($senha == $confirmarsenha) {
-                    if($u->registar($nome, $telefone, $email, $senha)) {
-                        echo "Registado com Sucesso!, Já pode entrar na sua área Pessoal.";
+            if ($u->msgErro == "") {
+                if ($senha == $confirmarsenha) {
+                    if ($u->registar($nome, $telefone, $email, $senha)) {
+                    ?>
+                        <div class="msg-sucesso">
+                            Registado com Sucesso!, Já pode entrar na sua área Pessoal.
+                        </div>
+                    <?php
                     } else {
-                        echo "Email já registado!";
+                    ?>
+                        <div class="msg-erro">
+                            Email já registado!
+                        </div>
+                    <?php
                     }
                 } else {
-                    echo "Atenção, senhas não correspondem!";
+                    ?>
+                        <div class="msg-erro">
+                            Atenção, senhas não correspondem!
+                        </div>
+                    <?php
                 }
             } else {
-                echo "Erro: " . $u->$msgErro;
+                ?>
+                    <div class="msg-erro">
+                        <?= "Erro: " . $u->$msgErro; ?>
+                    </div>
+                <?php
+                //echo "Erro: " . $u->$msgErro;
             }
         } else {
-            echo "Preencha todos os campos!";
+            ?>
+                <div class="msg-erro">
+                    Preencha todos os campos
+                </div>
+            <?php
         }
     }
 

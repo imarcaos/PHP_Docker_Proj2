@@ -1,3 +1,8 @@
+<?php
+    require_once 'classes/utilizador.php';
+    $u = new Utilizador;
+?>
+
 <!DOCTYPE html>
 <html lang="pt-PT">
 
@@ -22,6 +27,36 @@
     </div>
     
     <?php
+        if (isset($_POST['email'])) {
+            $email = addslashes($_POST['email']);
+            $senha = addslashes($_POST['senha']);
+            if (!empty($email) && !empty($senha)) {
+                $u->conectar("projeto_login", "db", "root", "root");
+                if ($u->msgErro == "") {
+                    if($u->entrar($email, $senha)) {
+                        header('Location: user_area.php');
+                    } else {
+                        ?>
+                            <div class="msg-erro">
+                                Email e/ou Senha Inválidos!
+                            </div>
+                        <?php
+                    }
+                } else {
+                    ?>
+                        <div class="msg-erro">
+                            <?= "Erro: " . $u->$msgErro; ?>
+                        </div>
+                    <?php
+                }
+            } else {
+                ?>
+                    <div class="msg-erro">
+                    Preencha todos os Campos!
+                    </div>
+                <?php
+            }
+        }
     
     ?>
 

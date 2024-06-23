@@ -132,3 +132,6 @@ Projeto criado com o intuíto de estudar a estruturação, organização e conex
     ```
 - Com o tamanho de cada campo, limitamos no nosso formulário a quantidade de carateres a poder ser introduzido pelo utilizador com o `maxlength`
 - Criado o código para registar um utilizador
+- Código para efetua login adicionado
+    - estou com um erro session_start() por solucionar
+    - para já fico com o projeto finalizado até este ponto.
